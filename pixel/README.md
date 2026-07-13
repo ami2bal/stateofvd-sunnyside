@@ -1,33 +1,27 @@
-# State of VD — Pixel (Roguelike RPG)
+# State of VD — Sunnyside (pixel)
 
 Fork **conceptuel** du simulateur `state-of-vd` : **mêmes** parcours, menus, zoom LOD, hotspots, tour dossier.  
-Seul le **décor** change — [Kenney Roguelike RPG Pack](https://kenney.nl/assets/roguelike-rpg-pack) (CC0).
+Décor : **Sunnyside World V2.1** (CC0) + signatures custom civic/UX (TASK-119).
 
 ## Live
 
-https://ami2bal.github.io/stateofvd/pixel/
+https://ami2bal.github.io/stateofvd-sunnyside/
 
-## Dual LOD (in/out superposés)
+## Dual LOD
 
-| Zoom | Couche | Référence Kenney |
+| Zoom | Couche | Contenu |
 |---|---|---|
-| Éloigné | `ground` + `roofs` | [Sample1](https://kenney.nl/media/pages/assets/roguelike-rpg-pack/6b88b8d663-1677697411/sample1.png) extérieur |
-| Proche | `ground` + `interiors` | [Sample2](https://kenney.nl/media/pages/assets/roguelike-rpg-pack/5f73473862-1677697413/sample2.png) plan intérieur |
+| Éloigné | `ground` + `roofs` | prefabs Room1 natifs (toits / façades) |
+| Proche | `ground` + `interiors` | plan ouvert + meubles signature |
 
-Crossfade inchangé (`engine/tiled.js` → `applyLod`).
+Crossfade runtime : `engine/tiled.js` → `applyLod`.
 
-## Grille
+## Règle d'or compose (v2)
 
-- SSOT structure : `../state-of-vd/data/world.json`
-- **Scale ×2** → grille pixel **76×48** (1216×768 px @ 16) pour des salles Sample2 spacieuses
-- Hotspots régénérés par le compose
-
-## Texture discipline (playbook v5)
-
-- **Arbres** : paires cime+tronc
-- **Chemins** : mono-tuile dirt, couloirs orthogonaux
-- **Extérieur** : toits multi-pignons + façade courte (murs/porte/fenêtres)
-- **Intérieur** : coque murs beige + sols par pièce + meubles ; fenêtres **dans** les murs
+- Prefabs tamponnés à **taille native** (pas d'étirement au footprint world)
+- Ancres = centres d'emprise `world.json` (scale ×2)
+- Allées **1 tuile** cobble (`floor_stone`) porte ↔ esplanade
+- Kits couleur : GC vert · CE rouge · dépts blue/orange/purple
 
 ## Lancer
 
@@ -35,16 +29,24 @@ Crossfade inchangé (`engine/tiled.js` → `applyLod`).
 python serve.py 8771
 ```
 
-→ **http://127.0.0.1:8771/state-of-vd-pixel/**  
+| URL | Rôle |
+|---|---|
+| http://127.0.0.1:8771/sunnyside/ | **URL propre** (alias) |
+| http://127.0.0.1:8771/state-of-vd-pixel/ | alias historique (dossier) |
+| http://127.0.0.1:8771/state-of-vd/ | jeu vectoriel main |
 
-Le serveur monte la racine `proto/` pour servir **à la fois** le pixel et les modules métier `state-of-vd/` (flows, flow-engine, inspector) — requis pour l’iso fonctionnel.
+Le serveur monte la racine `proto/` pour l'iso fonctionnel (modules métier `state-of-vd/`).
 
-
-## Rebuild
+### Rebuild carte
 
 ```bash
-python tools/compose_roguelike_world.py
-python tools/screenshot_review.py
+python tools/compose_sunnyside_world.py
 ```
 
-Crédit : *Assets by [Kenney](https://www.kenney.nl) (CC0)*.
+Sorties : `assets/composed/{ground,roofs,interiors,meta,path_graph}.png|json` · `assets/hotspots.json`.
+
+## Crédits
+
+- Sunnyside World V2.1 (CC0)
+- Custom civic/UX TASK-119 (CC0-project)
+- Layout & scénarios : State of VD (`world.json`)

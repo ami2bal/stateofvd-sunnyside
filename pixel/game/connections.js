@@ -7,7 +7,7 @@ import { routeHotspots } from "../engine/path-route.js";
 import {
   flowColorForKind,
   FLOW_SEMANTIC,
-} from "../../main/engine/theme.js";
+} from "../../state-of-vd/engine/theme.js";
 
 /**
  * @param {object} opts

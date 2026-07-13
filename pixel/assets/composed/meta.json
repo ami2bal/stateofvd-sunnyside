@@ -7,16 +7,17 @@
     "h": 48
   },
   "scale": 2,
-  "source": "sunnyside-v2.1",
-  "playbook": "sprite-library TASK-117/119",
+  "source": "sunnyside-v2.1-nostretch",
+  "compose": "v2-native-prefabs",
+  "playbook": "sprite-library TASK-117/119 + compose v2 no-stretch",
   "packs": [
     "Sunnyside World V2.1 — CC0",
     "Custom UX signatures TASK-119 — CC0-project"
   ],
-  "credit": "Sunnyside World (CC0) + custom civic/UX assets (CC0-project). Layout from state-of-vd world.json.",
+  "credit": "Sunnyside World (CC0) + custom civic/UX (CC0-project). Prefabs stamped at native size (no stretch). Layout anchors from state-of-vd world.json.",
   "da": {
-    "goal": "serious-game Place du Château — dual LOD Sunnyside",
-    "method": "prefab stamp + color transposition + custom signatures",
+    "goal": "Place du Chateau dual-LOD — prefabs native + signatures",
+    "method": "no-stretch stamp + color transpose + cobble paths + path_graph",
     "kits": {
       "parlement": "green",
       "chateau": "red",
@@ -27,6 +28,11 @@
       "dep-dcirh": "orange",
       "dep-djes": "purple",
       "dep-dfa": "blue"
+    },
+    "tiles": {
+      "grass": 66,
+      "stone_path": 961,
+      "water": 416
     }
   },
   "layers": {
@@ -35,87 +41,151 @@
     "interiors": "interiors.png"
   },
   "hotspots": 38,
+  "path_cells": 281,
   "sites": [
     {
       "id": "parlement",
       "kit": "green",
       "prefab": "prefab_03_16x9",
-      "gx": 6,
-      "gy": 4,
-      "fw": 28,
-      "fh": 18
+      "native": true,
+      "ox": 12,
+      "oy": 9,
+      "pw": 16,
+      "ph": 9,
+      "footprint_world": {
+        "gx": 6,
+        "gy": 4,
+        "fw": 28,
+        "fh": 18
+      }
     },
     {
       "id": "chateau",
       "kit": "red",
       "prefab": "prefab_02_9x13",
-      "gx": 42,
-      "gy": 4,
-      "fw": 24,
-      "fh": 18
+      "native": true,
+      "ox": 50,
+      "oy": 7,
+      "pw": 9,
+      "ph": 13,
+      "footprint_world": {
+        "gx": 42,
+        "gy": 4,
+        "fw": 24,
+        "fh": 18
+      }
     },
     {
       "id": "dep-dits",
       "kit": "blue",
       "prefab": "prefab_09_7x5",
-      "gx": 4,
-      "gy": 32,
-      "fw": 6,
-      "fh": 10
+      "native": true,
+      "ox": 4,
+      "oy": 35,
+      "pw": 7,
+      "ph": 5,
+      "footprint_world": {
+        "gx": 4,
+        "gy": 32,
+        "fw": 6,
+        "fh": 10
+      }
     },
     {
       "id": "dep-deiep",
       "kit": "orange",
       "prefab": "prefab_09_7x5",
-      "gx": 14,
-      "gy": 32,
-      "fw": 6,
-      "fh": 10
+      "native": true,
+      "ox": 14,
+      "oy": 35,
+      "pw": 7,
+      "ph": 5,
+      "footprint_world": {
+        "gx": 14,
+        "gy": 32,
+        "fw": 6,
+        "fh": 10
+      }
     },
     {
       "id": "dep-def",
       "kit": "purple",
       "prefab": "prefab_09_7x5",
-      "gx": 24,
-      "gy": 32,
-      "fw": 6,
-      "fh": 10
+      "native": true,
+      "ox": 24,
+      "oy": 35,
+      "pw": 7,
+      "ph": 5,
+      "footprint_world": {
+        "gx": 24,
+        "gy": 32,
+        "fw": 6,
+        "fh": 10
+      }
     },
     {
       "id": "dep-dsas",
       "kit": "blue",
       "prefab": "prefab_09_7x5",
-      "gx": 34,
-      "gy": 32,
-      "fw": 6,
-      "fh": 10
+      "native": true,
+      "ox": 34,
+      "oy": 35,
+      "pw": 7,
+      "ph": 5,
+      "footprint_world": {
+        "gx": 34,
+        "gy": 32,
+        "fw": 6,
+        "fh": 10
+      }
     },
     {
       "id": "dep-dcirh",
       "kit": "orange",
       "prefab": "prefab_09_7x5",
-      "gx": 44,
-      "gy": 32,
-      "fw": 6,
-      "fh": 10
+      "native": true,
+      "ox": 44,
+      "oy": 35,
+      "pw": 7,
+      "ph": 5,
+      "footprint_world": {
+        "gx": 44,
+        "gy": 32,
+        "fw": 6,
+        "fh": 10
+      }
     },
     {
       "id": "dep-djes",
       "kit": "purple",
       "prefab": "prefab_09_7x5",
-      "gx": 54,
-      "gy": 32,
-      "fw": 6,
-      "fh": 10
+      "native": true,
+      "ox": 54,
+      "oy": 35,
+      "pw": 7,
+      "ph": 5,
+      "footprint_world": {
+        "gx": 54,
+        "gy": 32,
+        "fw": 6,
+        "fh": 10
+      }
     },
     {
       "id": "dep-dfa",
       "kit": "blue",
       "prefab": "prefab_09_7x5",
-      "gx": 64,
-      "gy": 32,
-      "fw": 6,
-      "fh": 10
+      "native": true,
+      "ox": 64,
+      "oy": 35,
+      "pw": 7,
+      "ph": 5,
+      "footprint_world": {
+        "gx": 64,
+        "gy": 32,
+        "fw": 6,
+        "fh": 10
+      }
     }
   ]
 }

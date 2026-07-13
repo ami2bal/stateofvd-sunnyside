@@ -1,5 +1,5 @@
 /**
- * Map loader — Kenney composed layers preferred, Tiled fallback.
+ * Map loader — composed dual-LOD layers preferred (Sunnyside v2), Tiled fallback.
  */
 /* global PIXI */
 import { applyNearest } from "./pixel.js";
@@ -11,7 +11,7 @@ export async function loadTiledMap(mapUrl) {
   applyNearest();
   const base = new URL(mapUrl, location.href);
 
-  // 1) Prefer Kenney-composed full-map layers
+  // 1) Prefer composed full-map layers (Sunnyside dual-LOD ground/roofs/interiors)
   try {
     const composed = await loadComposed(base);
     if (composed) return composed;

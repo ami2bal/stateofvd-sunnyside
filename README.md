@@ -4,10 +4,7 @@ Fork **pixel art** de *State of* (simulation institutionnelle vaudoise), rendu *
 
 **Jouer** : [https://ami2bal.github.io/stateofvd-sunnyside/](https://ami2bal.github.io/stateofvd-sunnyside/)
 
-Fork conceptuel du projet principal (`state-of-vd`) :
-- mêmes parcours / Mode Parcours / RBAC / fil d'Ariane
-- DA : prefabs Sunnyside + signatures custom (TASK-117/119)
-- plan de masse : `world.json` (9 sites Place du Château)
+Compose **v2** : prefabs natifs (no-stretch) · chemins cobble · dual-LOD · path_graph BFS.
 
 ## Local
 

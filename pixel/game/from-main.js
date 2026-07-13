@@ -8,25 +8,25 @@ import {
   ENTRY_ORDER,
   getScenarioDef,
   scenariosByEntry,
-} from "../../main/game/flows/index.js";
+} from "../../state-of-vd/game/flows/index.js";
 import {
   metaForStep,
   ACTIVITY_LABEL,
   STEP_META,
-} from "../../main/game/walkthrough-meta.js";
+} from "../../state-of-vd/game/walkthrough-meta.js";
 import {
   FICHES,
   expandTitleAcronyms,
   ACRONYM_FULL,
-} from "../../main/game/inspector.js";
+} from "../../state-of-vd/game/inspector.js";
 import {
   resolveRbac,
   hierarchyLabel,
   RBAC_FICHES,
   LEGAL_URLS,
-} from "../../main/game/inspector-data.js";
-import { FlowEngine, seekWeekday } from "../../main/game/flow-engine.js";
-import { Clock } from "../../main/engine/clock.js";
+} from "../../state-of-vd/game/inspector-data.js";
+import { FlowEngine, seekWeekday } from "../../state-of-vd/game/flow-engine.js";
+import { Clock } from "../../state-of-vd/engine/clock.js";
 
 export {
   SCENARIO_DEFS,
@@ -139,7 +139,7 @@ export async function loadVaudProfile() {
     return window.__SOVD_PROFILE__;
   }
   const url = new URL(
-    "../../main/model/profiles/vaud.json",
+    "../../state-of-vd/model/profiles/vaud.json",
     import.meta.url
   ).href;
   const r = await fetch(url);
