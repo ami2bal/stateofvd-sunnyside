@@ -1,0 +1,1029 @@
+{
+ "custom_entries": "State of VD — assets custom UX/identité (TASK-119)",
+ "generated_by": "tools/build_custom_assets.py (regenerable)",
+ "license": "CC0-project (dessins originaux, palette Sunnyside)",
+ "count": 57,
+ "families": [
+  "civic_symbols",
+  "dossier_props",
+  "furniture_signature",
+  "ux_icons"
+ ],
+ "entries": [
+  {
+   "id": "custom_dossier_16",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_16.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_base",
+   "usage": "prop sol/table, base du fil conducteur"
+  },
+  {
+   "id": "custom_dossier_icon_32",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_icon_32.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    32,
+    32
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_icon",
+   "usage": "icône HUD/step-card/pastille"
+  },
+  {
+   "id": "custom_dossier_icon_24",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_icon_24.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    24,
+    24
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_icon"
+  },
+  {
+   "id": "custom_dossier_carry_overlay",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_carry_overlay.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "entities",
+   "assembly": "overlay",
+   "size": [
+    96,
+    64
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_carry",
+   "usage": "overlay frame perso CARRY (main/bras)"
+  },
+  {
+   "id": "custom_dossier_empd",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_empd.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_empd",
+   "tab_color": "red",
+   "usage": "variante type d'objet : EMPD"
+  },
+  {
+   "id": "custom_dossier_empl",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_empl.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_empl",
+   "tab_color": "orange",
+   "usage": "variante type d'objet : EMPL"
+  },
+  {
+   "id": "custom_dossier_motion",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_motion.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_motion",
+   "tab_color": "blue",
+   "usage": "variante type d'objet : MOTION"
+  },
+  {
+   "id": "custom_dossier_postulat",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_postulat.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_postulat",
+   "tab_color": "green",
+   "usage": "variante type d'objet : POSTULAT"
+  },
+  {
+   "id": "custom_dossier_petition",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_petition.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_petition",
+   "tab_color": "purple",
+   "usage": "variante type d'objet : PETITION"
+  },
+  {
+   "id": "custom_dossier_decret",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/dossier_decret.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "dossier_decret",
+   "tab_color": "gold",
+   "usage": "variante type d'objet : DECRET"
+  },
+  {
+   "id": "custom_sceau",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/sceau.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "sceau",
+   "usage": "étape adoption/promulgation"
+  },
+  {
+   "id": "custom_plume",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/plume.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "plume",
+   "usage": "étape collège CE / signature"
+  },
+  {
+   "id": "custom_enveloppe",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/dossier_props/enveloppe.png",
+   "family": "dossier_props",
+   "fine": true,
+   "role": "prop",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "enveloppe",
+   "usage": "pétitions / courriers / saisine tiers"
+  },
+  {
+   "id": "custom_digits_0_9",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/digits_0_9.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    100,
+    14
+   ],
+   "license": "CC0-project",
+   "subtype": "digits",
+   "frames": 10,
+   "cell": [
+    10,
+    14
+   ],
+   "usage": "fil d'Ariane, pastilles d'étape (numéros)"
+  },
+  {
+   "id": "custom_badge_done",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/badge_done.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "badge",
+   "state": "done",
+   "usage": "étape faite"
+  },
+  {
+   "id": "custom_badge_current",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/badge_current.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "badge",
+   "state": "current",
+   "usage": "étape courante"
+  },
+  {
+   "id": "custom_badge_next",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/badge_next.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "badge",
+   "state": "next",
+   "usage": "étape à venir"
+  },
+  {
+   "id": "custom_badge_branch",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/badge_branch.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "badge",
+   "state": "branch",
+   "usage": "point de branche/décision"
+  },
+  {
+   "id": "custom_tr_play",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/tr_play.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "transport",
+   "usage": "lecture Parcours"
+  },
+  {
+   "id": "custom_tr_pause",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/tr_pause.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "transport",
+   "usage": "pause"
+  },
+  {
+   "id": "custom_tr_stop",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/tr_stop.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "transport",
+   "usage": "stop"
+  },
+  {
+   "id": "custom_tr_speed_slow",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/tr_speed_slow.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "transport",
+   "usage": "vitesse ×0,6"
+  },
+  {
+   "id": "custom_tr_speed_norm",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/tr_speed_norm.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "transport",
+   "usage": "vitesse ×1"
+  },
+  {
+   "id": "custom_tr_speed_fast",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/tr_speed_fast.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "transport",
+   "usage": "vitesse ×1,6"
+  },
+  {
+   "id": "custom_issue_accept",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/issue_accept.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "issue",
+   "state": "accept",
+   "usage": "accepter (branche)"
+  },
+  {
+   "id": "custom_issue_reject",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/issue_reject.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "issue",
+   "state": "reject",
+   "usage": "rejeter (branche)"
+  },
+  {
+   "id": "custom_act_instruction",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/act_instruction.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "activity",
+   "activity": "instruction",
+   "usage": "kicker step-card / Ariane : instruction"
+  },
+  {
+   "id": "custom_act_transmission",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/act_transmission.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "activity",
+   "activity": "transmission",
+   "usage": "kicker step-card / Ariane : transmission"
+  },
+  {
+   "id": "custom_act_decision",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/act_decision.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "activity",
+   "activity": "decision",
+   "usage": "kicker step-card / Ariane : decision"
+  },
+  {
+   "id": "custom_act_publication",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/act_publication.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "activity",
+   "activity": "publication",
+   "usage": "kicker step-card / Ariane : publication"
+  },
+  {
+   "id": "custom_act_coordination",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/act_coordination.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "activity",
+   "activity": "coordination",
+   "usage": "kicker step-card / Ariane : coordination"
+  },
+  {
+   "id": "custom_act_controle",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/act_controle.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "activity",
+   "activity": "controle",
+   "usage": "kicker step-card / Ariane : controle"
+  },
+  {
+   "id": "custom_act_citoyen",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/act_citoyen.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "activity",
+   "activity": "citoyen",
+   "usage": "kicker step-card / Ariane : citoyen"
+  },
+  {
+   "id": "custom_flow_perle_in",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/flow_perle_in.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    10,
+    10
+   ],
+   "license": "CC0-project",
+   "subtype": "flow",
+   "dir": "in",
+   "usage": "perle entrée flux RBAC"
+  },
+  {
+   "id": "custom_flow_perle_out",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/flow_perle_out.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    10,
+    10
+   ],
+   "license": "CC0-project",
+   "subtype": "flow",
+   "dir": "out",
+   "usage": "perle sortie flux RBAC"
+  },
+  {
+   "id": "custom_flow_arrowhead",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/flow_arrowhead.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    10,
+    10
+   ],
+   "license": "CC0-project",
+   "subtype": "flow",
+   "usage": "tête de flèche sémantique (connections)"
+  },
+  {
+   "id": "custom_selection_ring",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/selection_ring.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    20,
+    20
+   ],
+   "license": "CC0-project",
+   "subtype": "ring",
+   "usage": "hover/pin salle"
+  },
+  {
+   "id": "custom_map_pin",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/map_pin.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    12,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "pin",
+   "usage": "focus scénario / marque-lieu"
+  },
+  {
+   "id": "custom_timer_ring_25",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/timer_ring_25.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "timer",
+   "frac": 25,
+   "usage": "countdown step-card"
+  },
+  {
+   "id": "custom_timer_ring_50",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/timer_ring_50.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "timer",
+   "frac": 50,
+   "usage": "countdown step-card"
+  },
+  {
+   "id": "custom_timer_ring_75",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/timer_ring_75.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "timer",
+   "frac": 75,
+   "usage": "countdown step-card"
+  },
+  {
+   "id": "custom_timer_ring_100",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/timer_ring_100.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "timer",
+   "frac": 100,
+   "usage": "countdown step-card"
+  },
+  {
+   "id": "custom_panel_gc_green",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/panel_gc_green.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "fill",
+   "size": [
+    24,
+    24
+   ],
+   "license": "CC0-project",
+   "subtype": "panel_9slice",
+   "tint": "vd_green",
+   "slice9": 6,
+   "usage": "inspector / step-card / Ariane (teinté)"
+  },
+  {
+   "id": "custom_panel_ce_gold",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/panel_ce_gold.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "fill",
+   "size": [
+    24,
+    24
+   ],
+   "license": "CC0-project",
+   "subtype": "panel_9slice",
+   "tint": "gold",
+   "slice9": 6,
+   "usage": "inspector / step-card / Ariane (teinté)"
+  },
+  {
+   "id": "custom_panel_neutral_blue",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/ux_icons/panel_neutral_blue.png",
+   "family": "ux_icons",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "fill",
+   "size": [
+    24,
+    24
+   ],
+   "license": "CC0-project",
+   "subtype": "panel_9slice",
+   "tint": "blue",
+   "slice9": 6,
+   "usage": "inspector / step-card / Ariane (teinté)"
+  },
+  {
+   "id": "custom_drapeau_vd",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/civic_symbols/drapeau_vd.png",
+   "family": "civic_symbols",
+   "fine": true,
+   "role": "prop",
+   "layer": "entities",
+   "assembly": "overlay",
+   "size": [
+    16,
+    20
+   ],
+   "license": "CC0-project",
+   "subtype": "flag_vd",
+   "usage": "façades GC, esplanade (identité cantonale)"
+  },
+  {
+   "id": "custom_drapeau_ch",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/civic_symbols/drapeau_ch.png",
+   "family": "civic_symbols",
+   "fine": true,
+   "role": "prop",
+   "layer": "entities",
+   "assembly": "overlay",
+   "size": [
+    16,
+    20
+   ],
+   "license": "CC0-project",
+   "subtype": "flag_ch",
+   "usage": "accent fédéral (facultatif)"
+  },
+  {
+   "id": "custom_blason_vd",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/civic_symbols/blason_vd.png",
+   "family": "civic_symbols",
+   "fine": true,
+   "role": "ui",
+   "layer": "ui",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "crest_vd",
+   "usage": "chrome UI, esplanade, boot"
+  },
+  {
+   "id": "custom_statue_or",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/civic_symbols/statue_or.png",
+   "family": "civic_symbols",
+   "fine": true,
+   "role": "prop",
+   "layer": "entities",
+   "assembly": "overlay",
+   "size": [
+    16,
+    22
+   ],
+   "license": "CC0-project",
+   "subtype": "statue",
+   "usage": "esplanade centrale (l'or réservé — halo doré)",
+   "note": "statue grise + halo doré : l'or plein reste réservé à la navette"
+  },
+  {
+   "id": "custom_lanterne_verte",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/civic_symbols/lanterne_verte.png",
+   "family": "civic_symbols",
+   "fine": true,
+   "role": "prop",
+   "layer": "walls",
+   "assembly": "overlay",
+   "size": [
+    12,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "lantern_gc",
+   "usage": "signature façade parlement (DA)"
+  },
+  {
+   "id": "custom_vigne_lavaux",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/civic_symbols/vigne_lavaux.png",
+   "family": "civic_symbols",
+   "fine": true,
+   "role": "prop",
+   "layer": "ground",
+   "assembly": "fill",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "vine_row",
+   "usage": "bande Est Lavaux (rang de ceps)"
+  },
+  {
+   "id": "custom_hemicycle_arc",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/furniture_signature/hemicycle_arc.png",
+   "family": "furniture_signature",
+   "fine": true,
+   "role": "furniture",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    52,
+    32
+   ],
+   "license": "CC0-project",
+   "subtype": "hemicycle",
+   "bbox": [
+    13,
+    8
+   ],
+   "room": "plenum-gc",
+   "usage": "bancs en arc du Grand Conseil (cœur identité GC)"
+  },
+  {
+   "id": "custom_tribune_president",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/furniture_signature/tribune_president.png",
+   "family": "furniture_signature",
+   "fine": true,
+   "role": "furniture",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "tribune",
+   "room": "plenum-gc",
+   "usage": "perchoir/tribune président"
+  },
+  {
+   "id": "custom_tableau_vote",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/furniture_signature/tableau_vote.png",
+   "family": "furniture_signature",
+   "fine": true,
+   "role": "furniture",
+   "layer": "walls",
+   "assembly": "overlay",
+   "size": [
+    16,
+    12
+   ],
+   "license": "CC0-project",
+   "subtype": "vote_board",
+   "room": "plenum-gc",
+   "usage": "panneau résultats de votes"
+  },
+  {
+   "id": "custom_urne",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/furniture_signature/urne.png",
+   "family": "furniture_signature",
+   "fine": true,
+   "role": "furniture",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "urne",
+   "room": "plenum-gc",
+   "usage": "boîte de scrutin (branche rejet/adopt)"
+  },
+  {
+   "id": "custom_table_college",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/furniture_signature/table_college.png",
+   "family": "furniture_signature",
+   "fine": true,
+   "role": "furniture",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    12,
+    8
+   ],
+   "license": "CC0-project",
+   "subtype": "table_ovale",
+   "room": "college-ce",
+   "usage": "table ovale du collège CE (7)"
+  },
+  {
+   "id": "custom_presse_fao",
+   "source": "custom",
+   "file": "assets/sprite-library/custom/furniture_signature/presse_fao.png",
+   "family": "furniture_signature",
+   "fine": true,
+   "role": "furniture",
+   "layer": "furniture",
+   "assembly": "overlay",
+   "size": [
+    16,
+    16
+   ],
+   "license": "CC0-project",
+   "subtype": "presse",
+   "room": "chancellerie",
+   "usage": "presse FAO (publication officielle)"
+  }
+ ]
+}
