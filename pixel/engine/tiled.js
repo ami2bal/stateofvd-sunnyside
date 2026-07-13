@@ -104,7 +104,7 @@ async function loadComposed(mapBase) {
     mapW,
     mapH,
     tile: meta.tile || 16,
-    source: "kenney-composed",
+    source: meta.source || "composed",
     credit: meta.credit,
     applyLod,
   };

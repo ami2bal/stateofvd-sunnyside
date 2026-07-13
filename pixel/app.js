@@ -366,6 +366,44 @@ async function loadWorld() {
   }
 }
 
+/**
+ * Dimensionne le renderer Pixi de façon fiable (TASK-120).
+ * `resizeTo` seul peut laisser width/height = 0 si le layout n'est pas prêt
+ * (host 0×0 → rien n'est dessiné → fond CSS visible).
+ * Ne pas écrire view.width/height à la main (casse le contexte WebGL Pixi) :
+ * toujours passer par `renderer.resize`.
+ */
+function forceCanvasSize(app, host) {
+  const w = Math.max(
+    1,
+    Math.floor(
+      host.clientWidth ||
+        host.getBoundingClientRect().width ||
+        window.innerWidth ||
+        1280
+    )
+  );
+  const h = Math.max(
+    1,
+    Math.floor(
+      host.clientHeight ||
+        host.getBoundingClientRect().height ||
+        window.innerHeight ||
+        720
+    )
+  );
+  if (app.renderer && (app.renderer.width !== w || app.renderer.height !== h)) {
+    app.renderer.resize(w, h);
+  }
+  if (app.view) {
+    app.view.style.width = "100%";
+    app.view.style.height = "100%";
+    app.view.style.display = "block";
+    app.view.style.imageRendering = "pixelated";
+  }
+  return { w, h };
+}
+
 async function main() {
   applyNearest();
   const host = $("game-host");
@@ -375,23 +413,43 @@ async function main() {
     return;
   }
 
+  // Attendre 1–2 frames de layout (évite course host 0×0 au boot)
+  await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+  const bootW = Math.max(1, host.clientWidth || window.innerWidth || 1280);
+  const bootH = Math.max(1, host.clientHeight || window.innerHeight || 720);
+
   const app = new PIXI.Application({
+    width: bootW,
+    height: bootH,
     backgroundAlpha: 0,
     antialias: false,
     autoDensity: false,
     resolution: 1,
-    resizeTo: host,
+    // resizeTo après append — sinon host peut encore être 0
   });
   host.appendChild(app.view);
   app.view.style.imageRendering = "pixelated";
+  forceCanvasSize(app, host);
+  // resizeTo une fois le canvas dans le DOM
+  try {
+    app.resizeTo = host;
+  } catch {
+    /* older pixi */
+  }
+  forceCanvasSize(app, host);
 
   const map = await loadWorld();
   app.stage.addChild(map.root);
+  // Re-force après chargement async (layout peut avoir changé)
+  forceCanvasSize(app, host);
 
   const ambient = installAmbient(map.ambientLayer);
   const camera = new SoftCamera(app, map.root);
   camera.setWorldSize(map.mapW || MAP_W, map.mapH || MAP_H);
   camera.bind();
+  forceCanvasSize(app, host);
+  camera.resize?.();
   camera.fit();
   if (map.applyLod) map.applyLod(camera.scale, reduced);
 
@@ -587,9 +645,7 @@ async function main() {
   }
 
   window.addEventListener("resize", () => {
-    const w = host.clientWidth;
-    const h = host.clientHeight;
-    if (w > 0 && h > 0) app.renderer.resize(w, h);
+    forceCanvasSize(app, host);
     camera.resize();
     if (map.applyLod) map.applyLod(camera.scale, reduced);
     contextUi.updateLabels();
@@ -598,16 +654,23 @@ async function main() {
     stepBadges.update();
   });
 
+  // Dernier passage après layout chrome (HUD bas peut décaler)
+  forceCanvasSize(app, host);
+  camera.resize();
+  camera.fit();
+
   const boot = $("boot");
   await new Promise((r) => setTimeout(r, reduced ? 200 : 600));
+  forceCanvasSize(app, host);
   camera.introFly(reduced ? 400 : 1600);
   await new Promise((r) => setTimeout(r, reduced ? 250 : 850));
   if (boot) boot.classList.add("is-done");
   const bootHint = $("boot-hint");
   if (bootHint) bootHint.hidden = true;
+  const src = map.source || "";
   toast(
-    map.source === "kenney-composed"
-      ? `${tour.list.length} parcours · Ariane · RBAC · Agir`
+    src.includes("sunnyside") || src.includes("composed") || src.includes("kenney")
+      ? `${tour.list.length} parcours · ${src.includes("sunnyside") ? "Sunnyside" : "Pixel"} · Ariane · RBAC`
       : "Mode procédural (fallback)",
     3600
   );
