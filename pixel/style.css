@@ -441,6 +441,26 @@ body {
   cursor: pointer;
   font-size: 0.85rem;
   transition: transform 0.15s, background 0.15s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+/* Sprites UX custom TASK-119 — ratio 1:1, nearest-neighbor */
+.px-ico {
+  width: 16px;
+  height: 16px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  pointer-events: none;
+  display: block;
+}
+.sp-btn.primary .px-ico {
+  /* play sur fond vert : garder pixels nets */
+  filter: drop-shadow(0 0 0 transparent);
+}
+.sp-btn--ico {
+  line-height: 0;
 }
 .sp-btn:hover:not(:disabled) {
   transform: scale(1.05);
@@ -1531,14 +1551,26 @@ body {
 }
 .sovd-ariane__step.is-current .sovd-ariane__dot,
 .sovd-ariane__step.is-active .sovd-ariane__dot {
-  background: rgba(62, 122, 82, 0.35);
+  background:
+    url("assets/sprite-library/custom/ux_icons/badge_current.png") center / 14px 14px no-repeat,
+    rgba(62, 122, 82, 0.35);
   border-color: rgba(62, 122, 82, 0.55);
-  color: #1e4a2c;
+  color: transparent;
   box-shadow: 0 0 0 3px rgba(62, 122, 82, 0.2);
+  image-rendering: pixelated;
+}
+.sovd-ariane__step.is-current .sovd-ariane__n,
+.sovd-ariane__step.is-active .sovd-ariane__n {
+  /* numéro reste lisible au-dessus du badge pixel */
+  color: #1e4a2c;
+  text-shadow: 0 0 2px #fff;
 }
 .sovd-ariane__step.is-done .sovd-ariane__dot {
-  background: rgba(47, 66, 102, 0.14);
+  background:
+    url("assets/sprite-library/custom/ux_icons/badge_done.png") center / 14px 14px no-repeat,
+    rgba(47, 66, 102, 0.14);
   color: #2f4266;
+  image-rendering: pixelated;
 }
 .sovd-ariane__step.is-awaiting .sovd-ariane__dot {
   background: rgba(255, 214, 102, 0.75);

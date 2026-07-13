@@ -1,6 +1,6 @@
 {
   "alignedTo": "state-of-vd/data/world.json",
-  "compose": "sunnyside-v2-nostretch",
+  "compose": "sunnyside-v3-dense-native",
   "scale": 2,
   "hotspots": [
     {
@@ -9,10 +9,10 @@
       "siteId": "parlement",
       "siteKind": "parlement",
       "label": "Parlement",
-      "cx": 320.0,
-      "cy": 216.0,
-      "w": 256,
-      "h": 144
+      "cx": 272.0,
+      "cy": 176.0,
+      "w": 352,
+      "h": 224
     },
     {
       "id": "plenum-gc",
@@ -21,10 +21,10 @@
       "siteKind": "parlement",
       "label": "Hémicycle du Grand Conseil",
       "sub": "Parlement",
-      "cx": 240.0,
-      "cy": 184.0,
-      "w": 64,
-      "h": 48
+      "cx": 160.0,
+      "cy": 128.0,
+      "w": 96,
+      "h": 96
     },
     {
       "id": "bureau-gc",
@@ -33,10 +33,10 @@
       "siteKind": "parlement",
       "label": "Bureau du Grand Conseil",
       "sub": "Parlement",
-      "cx": 304.0,
-      "cy": 184.0,
-      "w": 64,
-      "h": 48
+      "cx": 256.0,
+      "cy": 128.0,
+      "w": 96,
+      "h": 96
     },
     {
       "id": "commission",
@@ -45,10 +45,10 @@
       "siteKind": "parlement",
       "label": "Commissions parlementaires",
       "sub": "Parlement",
-      "cx": 368.0,
-      "cy": 184.0,
-      "w": 64,
-      "h": 48
+      "cx": 352.0,
+      "cy": 128.0,
+      "w": 96,
+      "h": 96
     },
     {
       "id": "sgc",
@@ -57,10 +57,10 @@
       "siteKind": "parlement",
       "label": "Secrétariat général du Grand Conseil",
       "sub": "Parlement",
-      "cx": 240.0,
-      "cy": 232.0,
-      "w": 64,
-      "h": 48
+      "cx": 160.0,
+      "cy": 224.0,
+      "w": 96,
+      "h": 96
     },
     {
       "id": "pas-perdus",
@@ -69,10 +69,10 @@
       "siteKind": "parlement",
       "label": "Salle des pas perdus",
       "sub": "Parlement",
-      "cx": 304.0,
-      "cy": 232.0,
-      "w": 64,
-      "h": 48
+      "cx": 256.0,
+      "cy": 224.0,
+      "w": 96,
+      "h": 96
     },
     {
       "id": "chateau",
@@ -80,9 +80,9 @@
       "siteId": "chateau",
       "siteKind": "chateau",
       "label": "Château Saint-Maire",
-      "cx": 872.0,
-      "cy": 216.0,
-      "w": 144,
+      "cx": 848.0,
+      "cy": 200.0,
+      "w": 352,
       "h": 208
     },
     {
@@ -92,9 +92,9 @@
       "siteKind": "chateau",
       "label": "Collège du Conseil d'État",
       "sub": "Château Saint-Maire",
-      "cx": 832.0,
-      "cy": 216.0,
-      "w": 32,
+      "cx": 736.0,
+      "cy": 200.0,
+      "w": 96,
       "h": 176
     },
     {
@@ -104,9 +104,9 @@
       "siteKind": "chateau",
       "label": "Conférence des secrétaires généraux",
       "sub": "Château Saint-Maire",
-      "cx": 864.0,
-      "cy": 216.0,
-      "w": 32,
+      "cx": 832.0,
+      "cy": 200.0,
+      "w": 96,
       "h": 176
     },
     {
@@ -116,9 +116,9 @@
       "siteKind": "chateau",
       "label": "Chancellerie d'État",
       "sub": "Château Saint-Maire",
-      "cx": 896.0,
-      "cy": 216.0,
-      "w": 32,
+      "cx": 928.0,
+      "cy": 200.0,
+      "w": 96,
       "h": 176
     },
     {
@@ -127,8 +127,8 @@
       "siteId": "dep-dits",
       "siteKind": "department",
       "label": "DITS — Institutions, territoire et sport",
-      "cx": 120.0,
-      "cy": 600.0,
+      "cx": 104.0,
+      "cy": 584.0,
       "w": 112,
       "h": 80
     },
@@ -139,8 +139,8 @@
       "siteKind": "department",
       "label": "Cabinet du chef de département",
       "sub": "DITS — Institutions, territoire et sport",
-      "cx": 96.0,
-      "cy": 600.0,
+      "cx": 80.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -151,8 +151,8 @@
       "siteKind": "department",
       "label": "Secrétariat général",
       "sub": "DITS — Institutions, territoire et sport",
-      "cx": 128.0,
-      "cy": 600.0,
+      "cx": 112.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -163,8 +163,8 @@
       "siteKind": "department",
       "label": "Cellule EMPD",
       "sub": "DITS — Institutions, territoire et sport",
-      "cx": 160.0,
-      "cy": 600.0,
+      "cx": 144.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -174,8 +174,8 @@
       "siteId": "dep-deiep",
       "siteKind": "department",
       "label": "DEIEP — Économie, innovation, emploi et patrimoine",
-      "cx": 280.0,
-      "cy": 600.0,
+      "cx": 264.0,
+      "cy": 584.0,
       "w": 112,
       "h": 80
     },
@@ -186,8 +186,8 @@
       "siteKind": "department",
       "label": "Cabinet du chef de département",
       "sub": "DEIEP — Économie, innovation, emploi et patrimoine",
-      "cx": 256.0,
-      "cy": 600.0,
+      "cx": 240.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -198,8 +198,8 @@
       "siteKind": "department",
       "label": "Secrétariat général",
       "sub": "DEIEP — Économie, innovation, emploi et patrimoine",
-      "cx": 288.0,
-      "cy": 600.0,
+      "cx": 272.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -210,8 +210,8 @@
       "siteKind": "department",
       "label": "Cellule EMPD",
       "sub": "DEIEP — Économie, innovation, emploi et patrimoine",
-      "cx": 320.0,
-      "cy": 600.0,
+      "cx": 304.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -221,8 +221,8 @@
       "siteId": "dep-def",
       "siteKind": "department",
       "label": "DEF — Enseignement et formation professionnelle",
-      "cx": 440.0,
-      "cy": 600.0,
+      "cx": 424.0,
+      "cy": 584.0,
       "w": 112,
       "h": 80
     },
@@ -233,8 +233,8 @@
       "siteKind": "department",
       "label": "Cabinet du chef de département",
       "sub": "DEF — Enseignement et formation professionnelle",
-      "cx": 416.0,
-      "cy": 600.0,
+      "cx": 400.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -245,8 +245,8 @@
       "siteKind": "department",
       "label": "Secrétariat général",
       "sub": "DEF — Enseignement et formation professionnelle",
-      "cx": 448.0,
-      "cy": 600.0,
+      "cx": 432.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -257,8 +257,8 @@
       "siteKind": "department",
       "label": "Cellule EMPD",
       "sub": "DEF — Enseignement et formation professionnelle",
-      "cx": 480.0,
-      "cy": 600.0,
+      "cx": 464.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -268,8 +268,8 @@
       "siteId": "dep-dsas",
       "siteKind": "department",
       "label": "DSAS — Santé et action sociale",
-      "cx": 600.0,
-      "cy": 600.0,
+      "cx": 584.0,
+      "cy": 584.0,
       "w": 112,
       "h": 80
     },
@@ -280,8 +280,8 @@
       "siteKind": "department",
       "label": "Cabinet du chef de département",
       "sub": "DSAS — Santé et action sociale",
-      "cx": 576.0,
-      "cy": 600.0,
+      "cx": 560.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -292,8 +292,8 @@
       "siteKind": "department",
       "label": "Secrétariat général",
       "sub": "DSAS — Santé et action sociale",
-      "cx": 608.0,
-      "cy": 600.0,
+      "cx": 592.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -304,8 +304,8 @@
       "siteKind": "department",
       "label": "Cellule EMPD",
       "sub": "DSAS — Santé et action sociale",
-      "cx": 640.0,
-      "cy": 600.0,
+      "cx": 624.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -315,8 +315,8 @@
       "siteId": "dep-dcirh",
       "siteKind": "department",
       "label": "DCIRH — Culture, infrastructures et ressources humaines",
-      "cx": 760.0,
-      "cy": 600.0,
+      "cx": 744.0,
+      "cy": 584.0,
       "w": 112,
       "h": 80
     },
@@ -327,8 +327,8 @@
       "siteKind": "department",
       "label": "Cabinet du chef de département",
       "sub": "DCIRH — Culture, infrastructures et ressources humaines",
-      "cx": 736.0,
-      "cy": 600.0,
+      "cx": 720.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -339,8 +339,8 @@
       "siteKind": "department",
       "label": "Secrétariat général",
       "sub": "DCIRH — Culture, infrastructures et ressources humaines",
-      "cx": 768.0,
-      "cy": 600.0,
+      "cx": 752.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -351,8 +351,8 @@
       "siteKind": "department",
       "label": "Cellule EMPD",
       "sub": "DCIRH — Culture, infrastructures et ressources humaines",
-      "cx": 800.0,
-      "cy": 600.0,
+      "cx": 784.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -362,8 +362,8 @@
       "siteId": "dep-djes",
       "siteKind": "department",
       "label": "DJES — Jeunesse, environnement et sécurité",
-      "cx": 920.0,
-      "cy": 600.0,
+      "cx": 904.0,
+      "cy": 584.0,
       "w": 112,
       "h": 80
     },
@@ -374,8 +374,8 @@
       "siteKind": "department",
       "label": "Cabinet du chef de département",
       "sub": "DJES — Jeunesse, environnement et sécurité",
-      "cx": 896.0,
-      "cy": 600.0,
+      "cx": 880.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -386,8 +386,8 @@
       "siteKind": "department",
       "label": "Secrétariat général",
       "sub": "DJES — Jeunesse, environnement et sécurité",
-      "cx": 928.0,
-      "cy": 600.0,
+      "cx": 912.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -398,8 +398,8 @@
       "siteKind": "department",
       "label": "Cellule EMPD",
       "sub": "DJES — Jeunesse, environnement et sécurité",
-      "cx": 960.0,
-      "cy": 600.0,
+      "cx": 944.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -409,8 +409,8 @@
       "siteId": "dep-dfa",
       "siteKind": "department",
       "label": "DFA — Finances et agriculture",
-      "cx": 1080.0,
-      "cy": 600.0,
+      "cx": 1064.0,
+      "cy": 584.0,
       "w": 112,
       "h": 80
     },
@@ -421,8 +421,8 @@
       "siteKind": "department",
       "label": "Cabinet du chef de département",
       "sub": "DFA — Finances et agriculture",
-      "cx": 1056.0,
-      "cy": 600.0,
+      "cx": 1040.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -433,8 +433,8 @@
       "siteKind": "department",
       "label": "Secrétariat général",
       "sub": "DFA — Finances et agriculture",
-      "cx": 1088.0,
-      "cy": 600.0,
+      "cx": 1072.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     },
@@ -445,8 +445,8 @@
       "siteKind": "department",
       "label": "Cellule EMPD",
       "sub": "DFA — Finances et agriculture",
-      "cx": 1120.0,
-      "cy": 600.0,
+      "cx": 1104.0,
+      "cy": 584.0,
       "w": 32,
       "h": 48
     }

@@ -190,6 +190,11 @@ function installScenarioPanel(tour) {
   });
 
   const speedBtn = $("sp-speed");
+  const SPEED_ICOS = [
+    "assets/sprite-library/custom/ux_icons/tr_speed_slow.png",
+    "assets/sprite-library/custom/ux_icons/tr_speed_norm.png",
+    "assets/sprite-library/custom/ux_icons/tr_speed_fast.png",
+  ];
   function paintSpeed(i) {
     if (!speedBtn) return;
     const idx = i ?? tour.getSpeedIndex();
@@ -200,6 +205,8 @@ function installScenarioPanel(tour) {
     speedBtn.title = `Vitesse ${lab}`;
     const labEl = speedBtn.querySelector(".sp-speed-lab");
     if (labEl) labEl.textContent = lab;
+    const ico = $("sp-speed-ico");
+    if (ico && SPEED_ICOS[idx]) ico.src = SPEED_ICOS[idx];
     speedBtn.querySelectorAll(".sp-speed-bars i").forEach((el, j) => {
       el.classList.toggle("on", j <= idx);
     });

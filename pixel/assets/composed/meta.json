@@ -7,17 +7,17 @@
     "h": 48
   },
   "scale": 2,
-  "source": "sunnyside-v2.1-nostretch",
-  "compose": "v2-native-prefabs",
-  "playbook": "sprite-library TASK-117/119 + compose v2 no-stretch",
+  "source": "sunnyside-v3-dense-native",
+  "compose": "v3-multi-prefab-dual-lod",
+  "playbook": "combinatorics TASK-117 + customs TASK-119 + dual LOD roofs/interiors",
   "packs": [
     "Sunnyside World V2.1 — CC0",
-    "Custom UX signatures TASK-119 — CC0-project"
+    "Custom civic/UX signatures TASK-119 — CC0-project"
   ],
-  "credit": "Sunnyside World (CC0) + custom civic/UX (CC0-project). Prefabs stamped at native size (no stretch). Layout anchors from state-of-vd world.json.",
+  "credit": "Sunnyside World (CC0) + custom civic/UX (CC0-project). Native prefab stamp (no stretch). Roofs=exterior clusters ; Interiors=prefab_01 furnished. Color transpose with empty-slot fallback.",
   "da": {
-    "goal": "Place du Chateau dual-LOD — prefabs native + signatures",
-    "method": "no-stretch stamp + color transpose + cobble paths + path_graph",
+    "goal": "Place du Chateau dual-LOD dense, ratios natifs",
+    "method": "multi-prefab cluster + interior prefab_01 + cobble paths + customs 1:1",
     "kits": {
       "parlement": "green",
       "chateau": "red",
@@ -29,11 +29,12 @@
       "dep-djes": "purple",
       "dep-dfa": "blue"
     },
-    "tiles": {
-      "grass": 66,
-      "stone_path": 961,
-      "water": 416
-    }
+    "rules": [
+      "never stretch prefabs",
+      "kit transpose cols 15-35 only",
+      "customs NEAREST integer scale only",
+      "roofs exterior / interiors furnished"
+    ]
   },
   "layers": {
     "ground": "ground.png",
@@ -41,17 +42,61 @@
     "interiors": "interiors.png"
   },
   "hotspots": 38,
-  "path_cells": 281,
+  "path_cells": 294,
   "sites": [
     {
       "id": "parlement",
       "kit": "green",
-      "prefab": "prefab_03_16x9",
       "native": true,
-      "ox": 12,
-      "oy": 9,
-      "pw": 16,
-      "ph": 9,
+      "ox": 6,
+      "oy": 4,
+      "pw": 22,
+      "ph": 14,
+      "pieces": [
+        {
+          "prefab": "prefab_05_9x6",
+          "ox": 8,
+          "oy": 7,
+          "pw": 9,
+          "ph": 6
+        },
+        {
+          "prefab": "prefab_05_9x6",
+          "ox": 16,
+          "oy": 7,
+          "pw": 9,
+          "ph": 6
+        },
+        {
+          "prefab": "prefab_09_7x5",
+          "ox": 10,
+          "oy": 12,
+          "pw": 7,
+          "ph": 5
+        },
+        {
+          "prefab": "prefab_07_4x9",
+          "ox": 24,
+          "oy": 5,
+          "pw": 4,
+          "ph": 9
+        },
+        {
+          "prefab": "prefab_15_6x4",
+          "ox": 6,
+          "oy": 4,
+          "pw": 6,
+          "ph": 4
+        },
+        {
+          "prefab": "prefab_01_14x11",
+          "layer": "interiors",
+          "ox": 13,
+          "oy": 7,
+          "pw": 14,
+          "ph": 11
+        }
+      ],
       "footprint_world": {
         "gx": 6,
         "gy": 4,
@@ -62,12 +107,42 @@
     {
       "id": "chateau",
       "kit": "red",
-      "prefab": "prefab_02_9x13",
       "native": true,
-      "ox": 50,
-      "oy": 7,
-      "pw": 9,
+      "ox": 42,
+      "oy": 6,
+      "pw": 22,
       "ph": 13,
+      "pieces": [
+        {
+          "prefab": "prefab_02_9x13",
+          "ox": 48,
+          "oy": 6,
+          "pw": 9,
+          "ph": 13
+        },
+        {
+          "prefab": "prefab_05_9x6",
+          "ox": 42,
+          "oy": 10,
+          "pw": 9,
+          "ph": 6
+        },
+        {
+          "prefab": "prefab_09_7x5",
+          "ox": 57,
+          "oy": 12,
+          "pw": 7,
+          "ph": 5
+        },
+        {
+          "prefab": "prefab_01_14x11",
+          "layer": "interiors",
+          "ox": 47,
+          "oy": 7,
+          "pw": 14,
+          "ph": 11
+        }
+      ],
       "footprint_world": {
         "gx": 42,
         "gy": 4,
@@ -78,12 +153,20 @@
     {
       "id": "dep-dits",
       "kit": "blue",
-      "prefab": "prefab_09_7x5",
       "native": true,
-      "ox": 4,
-      "oy": 35,
+      "ox": 3,
+      "oy": 34,
       "pw": 7,
       "ph": 5,
+      "pieces": [
+        {
+          "prefab": "prefab_09_7x5",
+          "ox": 3,
+          "oy": 34,
+          "pw": 7,
+          "ph": 5
+        }
+      ],
       "footprint_world": {
         "gx": 4,
         "gy": 32,
@@ -94,12 +177,20 @@
     {
       "id": "dep-deiep",
       "kit": "orange",
-      "prefab": "prefab_09_7x5",
       "native": true,
-      "ox": 14,
-      "oy": 35,
+      "ox": 13,
+      "oy": 34,
       "pw": 7,
       "ph": 5,
+      "pieces": [
+        {
+          "prefab": "prefab_09_7x5",
+          "ox": 13,
+          "oy": 34,
+          "pw": 7,
+          "ph": 5
+        }
+      ],
       "footprint_world": {
         "gx": 14,
         "gy": 32,
@@ -110,12 +201,20 @@
     {
       "id": "dep-def",
       "kit": "purple",
-      "prefab": "prefab_09_7x5",
       "native": true,
-      "ox": 24,
-      "oy": 35,
+      "ox": 23,
+      "oy": 34,
       "pw": 7,
       "ph": 5,
+      "pieces": [
+        {
+          "prefab": "prefab_09_7x5",
+          "ox": 23,
+          "oy": 34,
+          "pw": 7,
+          "ph": 5
+        }
+      ],
       "footprint_world": {
         "gx": 24,
         "gy": 32,
@@ -126,12 +225,20 @@
     {
       "id": "dep-dsas",
       "kit": "blue",
-      "prefab": "prefab_09_7x5",
       "native": true,
-      "ox": 34,
-      "oy": 35,
+      "ox": 33,
+      "oy": 34,
       "pw": 7,
       "ph": 5,
+      "pieces": [
+        {
+          "prefab": "prefab_09_7x5",
+          "ox": 33,
+          "oy": 34,
+          "pw": 7,
+          "ph": 5
+        }
+      ],
       "footprint_world": {
         "gx": 34,
         "gy": 32,
@@ -142,12 +249,20 @@
     {
       "id": "dep-dcirh",
       "kit": "orange",
-      "prefab": "prefab_09_7x5",
       "native": true,
-      "ox": 44,
-      "oy": 35,
+      "ox": 43,
+      "oy": 34,
       "pw": 7,
       "ph": 5,
+      "pieces": [
+        {
+          "prefab": "prefab_09_7x5",
+          "ox": 43,
+          "oy": 34,
+          "pw": 7,
+          "ph": 5
+        }
+      ],
       "footprint_world": {
         "gx": 44,
         "gy": 32,
@@ -158,12 +273,20 @@
     {
       "id": "dep-djes",
       "kit": "purple",
-      "prefab": "prefab_09_7x5",
       "native": true,
-      "ox": 54,
-      "oy": 35,
+      "ox": 53,
+      "oy": 34,
       "pw": 7,
       "ph": 5,
+      "pieces": [
+        {
+          "prefab": "prefab_09_7x5",
+          "ox": 53,
+          "oy": 34,
+          "pw": 7,
+          "ph": 5
+        }
+      ],
       "footprint_world": {
         "gx": 54,
         "gy": 32,
@@ -174,12 +297,20 @@
     {
       "id": "dep-dfa",
       "kit": "blue",
-      "prefab": "prefab_09_7x5",
       "native": true,
-      "ox": 64,
-      "oy": 35,
+      "ox": 63,
+      "oy": 34,
       "pw": 7,
       "ph": 5,
+      "pieces": [
+        {
+          "prefab": "prefab_09_7x5",
+          "ox": 63,
+          "oy": 34,
+          "pw": 7,
+          "ph": 5
+        }
+      ],
       "footprint_world": {
         "gx": 64,
         "gy": 32,
